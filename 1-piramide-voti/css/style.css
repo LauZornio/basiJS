@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clearer {
+  clear: both;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+.content {
+  margin: 0 auto;
+  width: 1160px;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66666%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-8 {
+  width: 66.66666%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.divider {
+  padding: 20px 0;
+}
+
+.spacer {
+  padding: 70px 0;
+}
+
+.responsive {
+  height: auto;
+  width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  word-wrap: break-word;
+}
+
+/* Global CSS */
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .content {
+    margin: 0 4%;
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    margin: 0 4%;
+    width: 92%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-6,
+  .col-8,
+  .col-10 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  
+}
